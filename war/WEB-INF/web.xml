@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xmlns="http://java.sun.com/xml/ns/javaee"
+xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
+http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" version="2.5">
+	<servlet>
+		<servlet-name>EditJob</servlet-name>
+		<servlet-class>net.stevenpeterson.tracker.EditJob</servlet-class>
+	</servlet>
+	<servlet>
+	    <servlet-name>ViewJobs</servlet-name>
+		<servlet-class>net.stevenpeterson.tracker.ViewJobs</servlet-class>
+	</servlet>
+		<servlet>
+	    <servlet-name>NewJob</servlet-name>
+		<servlet-class>net.stevenpeterson.tracker.NewJob</servlet-class>
+	</servlet>
+	<servlet>
+	    <servlet-name>JobUpdateFeedback</servlet-name>
+		<servlet-class>net.stevenpeterson.tracker.JobUpdateFeedback</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>EditJob</servlet-name>
+		<url-pattern>/EditJob</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>ViewJobs</servlet-name>
+		<url-pattern>/ViewJobs</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>JobUpdateFeedback</servlet-name>
+		<url-pattern>/JobUpdateFeedback</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>NewJob</servlet-name>
+		<url-pattern>/NewJob</url-pattern>
+	</servlet-mapping>
+	
+	<welcome-file-list>
+		<welcome-file>ViewJobs</welcome-file>
+	</welcome-file-list>
+</web-app>

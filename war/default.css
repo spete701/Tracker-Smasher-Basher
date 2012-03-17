@@ -1,0 +1,47 @@
+body {
+	background:#aaaaaa;
+	width:100%;
+	font-family:"Arial", sans-serif;
+}
+
+#container{
+	width:100%;
+	padding:2em;
+	background:#dddddd;
+	border-radius:1em;
+	margin: 0px;
+}
+
+#listing{
+	width:100%;
+	padding:2em;
+	border-style:dashed;
+	border-color: #ddddff;
+	border-width: 2px;
+}
+
+input {
+	width:100%;
+	margin: 0px;
+	padding: 0px;
+}
+
+.formDescription{
+	width:100%;
+	margin: 0px;
+	padding: 0px;
+}
+
+div.label{
+	background:#ddddff;
+	width:100%;
+	font-weight:bolder;
+	margin: 0px;
+	padding: 0px;
+}
+
+div.inputElement{
+	width:100%;
+	padding: 0px;
+	margin: 0px;	
+}
